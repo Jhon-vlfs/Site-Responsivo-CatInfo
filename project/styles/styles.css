@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font: 16px;
+    text-align: center;
+    border: 5px solid #333;
+}
+
+h1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #333;
+}
+.title{
+    color: #8a2be2;
+}
+h2{
+    text-align: left;
+    justify-content: flex-start;
+    align-items: center;
+    color: #333;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#topic{
+    font-size: 32px;
+}
+h3{
+    text-align: left;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+p{
+    padding: 10px 10px;
+    text-align: left;
+    color: #252424;
+}
+
+ul{
+    list-style-type: none;
+}
+h2 ol{
+    list-style-type: upper-roman;
+}
+ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    padding-left: 15px;
+    text-align: start;
+}
+
+ol li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+} 
+
+.conteudo{
+    background: #e8e8d9;
+	padding: 10px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border-radius: 1.25rem;
+}
+
+.media{
+    width: 100%;
+}
+
+header {
+    background-color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar a i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/*! Animação ao passar o mouse */
+.navbar a:hover {
+    color: #da326a;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    justify-content: center;
+    padding: 10px 0;
+    position: fixed center;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+
+/*! Responsividade */
+/*TODO: melhorar a responsividade em relação à navbar*/
+@media screen and (max-width: 768px) {
+    /*?Porquê não consigo deixar certinho*/
+    .navbar {
+        flex-direction: unset;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+}
+
+/** Parte II do projeto, outra aba */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#imgInit{
+    max-width: 80%;
+}
+#formatP{
+    max-width: 66%;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #252424;
+}
+
+.pai{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    align-items: start;
+    gap: 10px;
+}
+#img{
+    max-width: 400px;
+    height: auto;
+    padding-left: 20px;
+}
+#textos{
+    padding-top: 5dvh;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+}
+#textos p{
+    margin: 0 0 10px 0;
+    text-align: justify;
+    font-size: 18px;
+    color: #252424;
+}
+
+strong{
+    color: #8a2be2;
+}
+
+.escondido{
+    display: none;
+}
+
+/**Estilos para o botão continue lendo */
+#continue-lendo {
+    padding: 10px 20px;
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#continue-lendo:hover {
+    background-color: #6c1bb3;
+}
+/*? eu me pergunto se realmente precisava disso */
+
+/** parte III do projeto, essa vai ser básica*/
+#contactP{
+    color: #252424;
+    font-size: 20px;
+}
+#contactFig{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+figcaption{
+    margin-top: 10px;
+    font-style: italic;
+    display: block;
+    margin-bottom: 10vh;
+}
+
+#catphone{
+    border: 3px solid #333;
+}
+
+.contacts ul{
+    position: relative;
+    bottom: 0;
+    left: 85%;
+    padding: 0;
+    margin: 0;
+    transform: translateX( -50%);
+    display: flex;
+}
+.contacts ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+.contacts ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+.contacts ul li .fa-solid{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+.contacts ul li .fa-solid:hover {
+    color: #fff;
+}
+.contacts ul li .fab:hover {
+    color: #fff;
+}
+.contacts ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+.contacts ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+/** ícone com cores específicas, diz aí se eu não sou o bambambam*/
+.contacts ul li:nth-child(1) a:hover{
+    background-color: rgb(0, 0, 0, 0.82);
+}
+.contacts ul li:nth-child(2) a:hover{
+    background-color: #D93025;
+}
+.contacts ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.contacts ul li:nth-child(4) a:hover{
+    background-color: #E4405F;
+}
+
+/*!responsividade*/
+@media (max-width: 768px) {
+    .contacts ul {
+        flex-direction: column;
+    }
+
+    .contacts ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .contacts {
+        position: relative;
+        bottom: 30px;
+    }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/project/styles/styles.css">
+    <link rel="cat icon" href="/project/docs/images/icons/animal.png" type="image/x-icon">
+    <script src="/project/source/javascript/button.js"></script>
+</head>
+<body>
+    <header>
+        <!-- !barra de navegação -->
+        <nav>
+            <div class="navbar">
+                <li><a href="/project/index.html"><i class="fas fa-home"></i>
+                    Home</a></li> <!-- *Página inicial -->
+                <li><a href="/project/templates/CatBreeds.html"><i class="fas fa-list"></i>
+                    Special Cats</a></li> <!-- *Informações sobre as raças de gatos -->
+                <li><a href="/project/templates/Contact.html"><i class="fas fa-phone"></i>
+                    Contact</a></li> <!-- *Aba de contatos (email, número, linkedin) -->
+                <li><a href="/project/templates/feedback.html"><i class="fas fa-clipboard-list"></i>
+                    Feedback Survey</a></li> <!-- *Formulário de satisfação/opinião do site -->
+                <!-- TODO: Poderia adicionar mais elementos, entretanto...-->
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- !Conteúdo principal -->
+    <div class="conteudo">
+        <h1 class="title">Gatos especiais! Veja agora a nossa lista.</h1>
+        <!-- *Breve introdução -->
+        <div class="container">
+            <figure>
+                <img src="/project/docs/images/inicialphoto.jpg" alt="gatinho de gravata borboleta violeta" width="500" height="400" id="imgInit"></img>
+            </figure>
+            <p id="formatP">Até mesmo a pessoa mais apaixonada por gatos não conhece todas as raças existentes no Mundo inteiro, afinal, a lista é enorme! Então, já que é um pouquinho difícil conhecer todos os tipos de felinos, que tal conhecer os de mais destaque em cada particularidade?</p>
+        </div>
+        <!-- *Início da lista -->
+        <h1>Classificação dos Gatos por suas peculiaridades: </h1>
+            <h2>1. Gatos mais populares ⭐</h2>
+            <h2 id="topic"><ol><li>SRD's</li></ol></h2>
+            <div class="pai">
+                <figure id="img">
+                    <img src="/project/docs/images/srd.jpg" alt="gato vira-lata com coleira">
+                </figure>
+                <div id="textos">
+                    <p> Liderando a nossa lista de raças de gatos mais populares estão justamente os felinos Sem Raça Definida, mais conhecidos como SRDs ou <strong>Vira-Latas</strong>. Para se ter uma ideia da fama desses bichanos, 95% dos gatos brasileiros não possuem raça – muito menos pedigree!</p>
+                    <p> Justamente por não terem uma raça definida, é extremamente difícil “prever” o temperamento, inteligência e os cuidados que esses felinos precisam. Mas, no geral, eles são bem apegados aos seus humanos e <strong>adoram um carinho</strong>!</p>
+                </div>
+            </div>
+            <h2 id="topic"> <ol start="2"><li>Siamês</li></ol></h2>
+            <div class="pai">
+                <figure id="img">
+                    <img src="/project/docs/images/siamês.jpg" alt="gato siamês">
+                </figure>
+                <div id="textos">
+                    <p> Esse é o famoso <strong>Siamês</strong>. Esses felinos são muito sociáveis, fiéis e brincalhões, características que mostram o <strong>porquê</strong> eles ganharam o coração de muita gente.</p>
+                    <p> Uma curiosidade é que muitos dos gatos tidos como siameses aqui no Brasil <strong>não são</strong>, de fato, da raça. Isso porque muitas pessoas chamam de siamês todos os gatinhos que possuem as características típicas da raça (olhos azuis e extremidades do corpo com coloração mais escura).</p>
+                </div>
+            </div>
+            <h2>2. Gatos mais inteligentes 🧠</h2>
+            <h2 id="topic"><ol><li>Gato Bengal</li></ol></h2>
+            <div class="pai">
+                <figure id="img">
+                    <img src="/project/docs/images/gato bengal.avif" alt="gato bengal (muito parecido com o gato do mato)">
+                </figure>
+                <div id="textos">
+                    <p> Considerada a raça de gatos mais inteligente do mundo por causa do seu cruzamento genético entre um felino doméstico e um felino selvagem, os gatos Bengal são um verdadeiro <strong>desafio</strong>.</p>
+                    <p> Como são muito inteligentes, possuem uma personalidade forte e acabam fazendo o que querem e quando querem. Podem, inclusive, ter <strong>diferentes tipos de vocalizações</strong> para aprimorar a comunicação com sua família. </p>
+                </div>
+            </div>
+            <h2 id="topic"><ol start="2"><li>Gato Angorá</li></ol></h2>
+            <div class="pai">
+                <figure id="img">
+                    <img src="/project/docs/images/gato angorá.avif" alt="gato angorá sentado como um deus do egito">
+                </figure>
+                <div id="textos">
+                    <p> O <strong>gato Angorá</strong> é tão inteligente que não se contenta apenas com a sua curiosidade. Essa raça de gato gosta de ser estimulado e de aprender com seus humanos. Além disso, o Angorá adora um desafio que o coloque para pensar! São gatos muito ativos, que gostam de carinho e companhia.</p>
+                    <p> Você pode conhecê-lo como o gatinho de um dos personagens de <strong>A Turma da Mônica</strong> (o <strong>Mingau</strong>, o gato da Magali). Como é mostrado no desenho, ele também pode e gosta de passear, por isso vale a pena investir em um <strong>adestramento de gatos</strong> para tornar esse momento agradável para ele.</p>
+                </div>
+            </div>
+            <!-- !Botão continue lendo, caso a pessoa se interesse -->
+            <button id="continue-lendo" onclick="mostrarConteudo()">Continue Lendo</button>
+            <div class="escondido" id="conteudo-extra">
+                <h2>3. Os menores Gatos 🔎</h2>
+                <h2 id="topic"><ol><li>Munchkins</li></ol></h2>
+                <div class="pai">
+                    <figure id="img">
+                        <img src="/project/docs/images/munchkins.jfif" alt="o que esse gato não tem de tamanho ele tem de cara de bravo">
+                    </figure>
+                    <div id="textos">
+                        <p> Os Munchkins, são classificados como a raça de gatinhos mais baixa do mundo. Por conta de suas pernas curtas, eles não costumam passar de <strong>23 cm de altura</strong>. Eles são considerados dóceis e tranquilos.</p>
+                        <p> A raça recebeu seu nome por causa dos personagens "Munchkin" do filme "O Mágico de Oz", devido à sua baixa estatura. entretant, também são conhecidos como: <strong>Gato rebaixado</strong> ou <strong>Gato anão</strong>. Além de sua aparência exótica, os gatos da raça Munchkin são muito amáveis, doces e inteligentes, que gostam de demonstrar seu afeto. </p>
+                    </div>
+                </div>
+                <h2 id="topic"><ol start="2"><li>Gato Singapura</li></ol></h2>
+                <div class="pai">
+                    <figure id="img">
+                        <img src="/project/docs/images/gato singapura.webp" alt="gato singapura com olhos adoráveis">
+                    </figure>
+                    <div id="textos">
+                        <p> Considerada a segunda menor raça do mundo, esse gatinho pode pesar de 1,8 kg a 3,6 kg. Ele ficou conhecido por seus <strong>olhos gigantes adoráveis</strong> e <srtong>cabeça pequena</srtong>, o que gera uma aparência <strong>super delicada</strong>. Além de ótimos companheiros, gatos dessa raça podem ser muito carinhosos.</p>
+                        <p> Uma das características do animal é o formato de um <strong>“M”</strong> em sua testa, composta por pelos escuros. Para aqueles que desejam adotar gatos dessa raça, é importante ter em mente que eles <strong>não podem</strong> ficar sozinhos por muito tempo, justamente por serem muito carinhosos e companheiros. </p>
+                    </div>
+                </div>
+                <h2>3. Os maiores Gatos 📏</h2>
+                <h2 id="topic"><ol><li>Caine Moon</li></ol></h2>
+                <div class="pai">
+                    <figure id="img">
+                        <img src="/project/docs/images/maine coon.webp" alt="gato com cara de marrento (pelo tamanho deve ser)">
+                    </figure>
+                    <div id="textos">
+                        <p> Talvez a raça mais conhecida no mundo por seu tamanho imponente, o Maine Coon tem um porte físico robusto, pelagem densa e cauda exuberante. Um gato dessa raça pode pesar até 15 kg e medir <strong>120 centímetros</strong>!</p>
+                        <p>Outra curiosidade é a sua pelagem, que pode apresentar mais de 75 variações de cores e olhos verdes, dourados ou cobre. Sua personalidade é extremamente amigável e sociável com seus humanos. Há quem os chame de <strong>gigantes gentis</strong>!</p>
+                    </div>
+                </div>
+                <h2 id="topic"><ol start="2"><li>Ragdoll (boneco de pano)</li></ol></h2>
+                <div class="pai">
+                    <figure id="img">
+                        <img src="/project/docs/images/ragdoll.webp" alt="esse gato realmente parece uma pelúcia">
+                    </figure>
+                    <div id="textos">
+                        <p> Seu nome já diz tudo: o ragdoll, conhecido como <strong>boneco de pano</strong>, ganhou esse nome por sua natureza dócil, fofa e afetuosa. Os gatos dessa raça adoram colo e abraços dos humanos, e não é fácil segurar esses felinos, pois podem pesar 9 kg e medir quase <strong>60 centímetros</strong>.</p>
+                        <p>Outra característica que os torna ainda mais adoráveis é sua pelagem sedosa, que se assemelha a um verdadeiro <strong>gatinho de pelúcia</strong>. Normalmente, eles apresentam colorações em tons de chocolate, vermelho e creme, e todos têm olhos azuis.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer>
+        <p>© 2024 João Victor Lima. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
